@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(243, 238, 239);
+
+}
+h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color:#D2E0FB;
+    background-color:rgba(0, 0, 0, 0.54);
+    font-family:"Varela Round" ;
+}
+
+#display{
+padding: 30px;
+width: 100%;
+background-color:  rgba(3, 3, 3, 0.89);
+color: antiquewhite;
+font-size: 4rem;
+text-align:right;
+border: 1px solid black;
+margin-bottom: 10px;
+outline: none;
+font-family: "Afacad Flux";
+font-weight: 400;
+}
+button{
+   width: 70px;
+   height: 70px;
+   border: none;
+   background-color:rgb(2, 2, 30);
+   border-radius: 50px;
+   color:aliceblue;
+   font-size: 2rem;
+   margin: 15px;
+   cursor: pointer;
+   box-shadow: 0.5px 0.5px 2px 2px rgb(2, 229, 229) ;
+   transition: 0.5s;
+   font-family: "Karla";
+   font-weight: 800;
+   font-style: italic;
+}
+button:hover{
+    transform: scale(1.2);
+    
+}
+.box{
+    margin-top: 5px;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    max-width: 500px; 
+    border-bottom-right-radius: 5rem;
+    border: 1px solid rgba(255, 255, 255, .025);
+    background-color: rgb(9, 1, 57);
+    box-shadow:  5px 5px 10px 5px rgba(0, 0, 0, 0.54) ;
+    
+}
+.operator{
+    background-color: rgb(91, 238, 238);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.operator:hover{
+    color: black;
+    background-color: rgb(205, 252, 252);
+    transform: scale(1.1);
+}
+#keys{
+    display: grid;
+}
+.rowone{
+    display: flex;
+    gap: 1.5rem;
+}
+.rowtwo{
+    display: flex;
+    gap:1.5rem;
+}
+.rowthree{
+    display: flex;
+    gap:1.5rem;
+}
+.rowfour{
+    display: flex;
+    gap:1.5rem;
+}
+.equalbutton{
+    margin-top: 25px;
+height: 50px;
+width: 300px;
+border-radius: 20px;
+background-color: rgb(91, 238, 238);
+color: black;
+}
+
+.down{
+    display: flex;
+    gap: 1.3rem;
+}
+.clear{
+    background-color: #507687;
+    color: aquamarine;
+}
+@media(max-width:900px){
+    body{
+        margin-top: 70px;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    #display{
+        padding: 5px;
+        width: 100%;
+        background-color:  rgba(3, 3, 3, 0.89);
+        color: antiquewhite;
+        font-size: 4rem;
+        text-align:right;
+        border: 1px solid black;
+        margin-bottom: 5px;
+        outline: none;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color:rgb(2, 2, 30);
+            color:aliceblue;
+            font-size: 1.1rem;
+            margin: 7px;
+            cursor: pointer;
+            box-shadow: 0.5px 0.5px 2px 2px rgb(2, 229, 229);
+            transition: 0.5s;
+         }
+         .box{
+            margin-top: 35px;
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            max-width: 300px; 
+            border-bottom-right-radius: 5rem;
+            border: 1px solid rgba(255, 255, 255, .025);
+            background-color: rgb(9, 1, 57);
+            box-shadow:  5px 5px 10px 5px rgba(0, 0, 0, 0.54) ;
+            
+        }
+        .equalbutton{
+            margin-top: 5px;
+        height: 40px;
+        width: 170px;
+        border-radius: 20px;
+        background-color: rgb(91, 238, 238);
+        }
+        .rowone{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowtwo{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowthree{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowfour{
+            display: flex;
+            gap:1.2rem;
+        }
+        .down{
+            display: flex;
+            gap: 1.1rem;
+            margin-top: 10px;
+        }
+        .clear{
+            background-color: #507687;
+            color: aquamarine;
+            width: 40px;
+            height: 40px;
+        }
+
+}
+
+@media(max-width:500px) {
+    body{
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    #display{
+        padding: 10px;
+        width: 100%;
+        background-color:  rgba(3, 3, 3, 0.89);
+        color: antiquewhite;
+        font-size: 4rem;
+        text-align:right;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        outline: none;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background-color: rgb(2, 2, 30);
+            color: aliceblue;
+            font-size: 1.1rem;
+            margin: 7px;
+            cursor: pointer;
+            box-shadow: 0.5px 0.5px 2px 2px rgb(91, 238, 238);
+            transition: 0.5s;
+         }
+         .box{
+            margin-top: 70px;
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            max-width: 320px; 
+            border-bottom-right-radius: 5rem;
+            border: 1px solid rgba(255, 255, 255, .025);
+            background-color: rgb(9, 1, 57);
+            box-shadow:  5px 5px 10px 5px rgba(0, 0, 0, 0.54) ;
+            
+        }
+        .equalbutton{
+            margin-top: 10px;
+        height: 45px;
+        width: 180px;
+        border-radius: 20px;
+        background-color: rgb(2, 229, 229);
+        }
+        .rowone{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowtwo{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowthree{
+            display: flex;
+            gap:1.2rem;
+        }
+        .rowfour{
+            display: flex;
+            gap:1.2rem;
+        }
+        .down{
+            display: flex;
+            gap: 1.1rem;
+            margin-top: 10px;
+        }
+        .clear{
+            background-color: #507687;
+            color: aquamarine;
+            width: 50px;
+            height: 50px;
+        }
+
+    
+}

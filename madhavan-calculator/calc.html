@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Karla:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="calculator.png">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+  
+ <main class="box"> 
+    <h1> CALCULATOR</h1>
+        <input id="display" readonly>
+
+        <div id="keys">
+
+            <div class="rowone">
+                <button onclick="appendtodisplay('+')" class="operator">+</button>
+                <button onclick="appendtodisplay('7')">7</button>
+                <button onclick="appendtodisplay('8')">8</button>
+                <button onclick="appendtodisplay('9')">9</button>
+            </div>
+
+            <div class="rowtwo">
+                <button onclick="appendtodisplay('-')" class="operator">-</button>
+                <button onclick="appendtodisplay('4')">4</button>
+                <button onclick="appendtodisplay('5')">5</button>
+                <button onclick="appendtodisplay('6')">6</button>
+            </div>
+
+            <div class="rowthree">
+                <button onclick="appendtodisplay('*')" class="operator">*</button>
+                <button onclick="appendtodisplay('1')">1</button>
+                <button onclick="appendtodisplay('2')">2</button>
+                <button onclick="appendtodisplay('3')">3</button>
+            </div>
+
+            <div class="rowfour">
+                <button onclick="appendtodisplay('/')" class="operator">/</button>
+                <button onclick="appendtodisplay('0')">0</button>
+                <button onclick="appendtodisplay('.')">.</button>
+                <button onclick="appendtodisplay('00')">00</button>
+            </div>
+            <div class="down">
+                <button onclick="document.getElementById('display').value='' " class="clear">C</button>
+                <button onclick="calculate()" class="equalbutton">=</button>
+            </div>
+
+        </div>
+    </main>
+  
+
+</body>
+<script src="calc.js"></script>
+</html>
