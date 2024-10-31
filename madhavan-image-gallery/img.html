@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="picture.png">
+    <title>IMAGE GALLERY</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+
+<body>
+    <h1> IMAGE GALLERY</h1>
+    <div class="img-gallery-container">
+        <img src="https://picsum.photos/800/600?1" alt="" onclick="openmodal(1)">
+        <img src="https://picsum.photos/800/600?2" alt="" onclick="openmodal(2)">
+        <img src="https://picsum.photos/800/600?3" alt="" onclick="openmodal(3)">
+        <img src="https://picsum.photos/800/600?4" alt="" onclick="openmodal(4)">
+        <img src="https://picsum.photos/800/600?5" alt="" onclick="openmodal(5)">
+        <img src="https://picsum.photos/800/600?6" alt="" onclick="openmodal(6)">
+        <img src="https://picsum.photos/800/600?7" alt="" onclick="openmodal(7)">
+        <img src="https://picsum.photos/800/600?8" alt="" onclick="openmodal(8)">
+        <img src="https://picsum.photos/800/600?9" alt="" onclick="openmodal(9)">
+        <img src="https://picsum.photos/800/600?10" alt="" onclick="openmodal(10)">
+        <img src="https://picsum.photos/800/600?11" alt="" onclick="openmodal(11)">
+        <img src="https://picsum.photos/800/600?12" alt="" onclick="openmodal(12)">
+        <img src="https://picsum.photos/800/600?13" alt="" onclick="openmodal(13)">
+        <img src="https://picsum.photos/800/600?14" alt="" onclick="openmodal(14)">
+        <img src="https://picsum.photos/800/600?15" alt="" onclick="openmodal(15)">
+        <img src="https://picsum.photos/800/600?16" alt="" onclick="openmodal(16)">
+        <img src="https://picsum.photos/800/600?17" alt="" onclick="openmodal(17)">
+        <img src="https://picsum.photos/800/600?18" alt="" onclick="openmodal(18)">
+        <img src="https://picsum.photos/800/600?19" alt="" onclick="openmodal(19)">
+        <img src="https://picsum.photos/800/600?20" alt="" onclick="openmodal(20)">
+        <img src="https://picsum.photos/800/600?21" alt="" onclick="openmodal(21)">
+
+
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&#10007;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="https://picsum.photos/800/600?1" alt="Modal Image">
+
+
+            <button class="prev" onclick="prevImage()">&#10092;</button>
+            <button class="next" onclick="nextImage()">&#10093;</button>
+        </div>
+    </div>
+
+    <script src="img.js"></script>
+
+</body>
+
+</html>
